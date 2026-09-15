@@ -1,0 +1,8 @@
+{
+  "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "opencv": "4.13.0",
+  "numpy": "2.4.3",
+  "evaluationWidth": 480,
+  "heldoutDefinition": "indices not present in trainingIndices",
+  "rendering": "WebGL1, single sampler for image experiments; zero samplers for pure pear"
+}

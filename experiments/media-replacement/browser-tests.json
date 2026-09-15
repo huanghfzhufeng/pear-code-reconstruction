@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-09-15T14:35:48.859Z",
+  "passed": 7,
+  "failed": 0,
+  "results": [
+    {
+      "name": "16 source cases load and render using sparse parameters",
+      "status": "pass",
+      "detail": {
+        "count": 16
+      }
+    },
+    {
+      "name": "Mesh player renders non-training time and visibly moves",
+      "status": "pass"
+    },
+    {
+      "name": "Generated-only view does not request reference frames or video",
+      "status": "pass",
+      "detail": {
+        "rasterRequests": [
+          "http://127.0.0.1:4198/experiments/media-replacement/plan-tail/anchor.webp"
+        ],
+        "parameterInputs": [
+          "motion.json",
+          "mesh.json"
+        ]
+      }
+    },
+    {
+      "name": "Pure pear: zero raster/video requests and different views",
+      "status": "pass",
+      "detail": {
+        "requests": [
+          "http://127.0.0.1:4198/experiments/media-replacement/pure.html",
+          "http://127.0.0.1:4198/experiments/media-replacement/lab.css",
+          "http://127.0.0.1:4198/experiments/media-replacement/pear.js"
+        ],
+        "colors": 1627
+      }
+    },
+    {
+      "name": "Mobile 390px layout and controls",
+      "status": "pass"
+    },
+    {
+      "name": "Reduced motion starts without autoplay",
+      "status": "pass"
+    },
+    {
+      "name": "Hold-out sets disjoint from fitted samples; runtime has one image",
+      "status": "pass",
+      "detail": {
+        "heldOutFrames": 1467
+      }
+    }
+  ]
+}

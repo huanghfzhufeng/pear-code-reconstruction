@@ -1,0 +1,96 @@
+{
+  "width": 480,
+  "height": 270,
+  "anchor": "anchor.webp",
+  "frames": 121,
+  "keyframes": [
+    {
+      "index": 0,
+      "progress": 0.0,
+      "matrix": null,
+      "inliers": 6
+    },
+    {
+      "index": 10,
+      "progress": 0.08333333333333333,
+      "matrix": null,
+      "inliers": 0
+    },
+    {
+      "index": 20,
+      "progress": 0.16666666666666666,
+      "matrix": null,
+      "inliers": 1
+    },
+    {
+      "index": 30,
+      "progress": 0.25,
+      "matrix": null,
+      "inliers": 0
+    },
+    {
+      "index": 40,
+      "progress": 0.3333333333333333,
+      "matrix": null,
+      "inliers": 1
+    },
+    {
+      "index": 50,
+      "progress": 0.4166666666666667,
+      "matrix": null,
+      "inliers": 2
+    },
+    {
+      "index": 60,
+      "progress": 0.5,
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "inliers": 999
+    },
+    {
+      "index": 70,
+      "progress": 0.5833333333333334,
+      "matrix": null,
+      "inliers": 0
+    },
+    {
+      "index": 80,
+      "progress": 0.6666666666666666,
+      "matrix": null,
+      "inliers": 0
+    },
+    {
+      "index": 90,
+      "progress": 0.75,
+      "matrix": null,
+      "inliers": 0
+    },
+    {
+      "index": 100,
+      "progress": 0.8333333333333334,
+      "matrix": null,
+      "inliers": 4
+    },
+    {
+      "index": 110,
+      "progress": 0.9166666666666666,
+      "matrix": null,
+      "inliers": 0
+    },
+    {
+      "index": 120,
+      "progress": 1.0,
+      "matrix": null,
+      "inliers": 4
+    }
+  ]
+}
