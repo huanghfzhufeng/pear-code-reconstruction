@@ -1,0 +1,22 @@
+{
+  "capturedAt": "2026-09-15T11:09:08.058Z",
+  "url": "https://pear.no/?hero=signal",
+  "files": [
+    {
+      "file": "original-0.js",
+      "url": "https://pear.no/assets/index-BhJdAf8K.js",
+      "bytes": 323793,
+      "sha256": "5e373dec30e3fc8c3cd1403a61d635be715290241853623e0f6857dd0c81efe2"
+    },
+    {
+      "file": "original-0.css",
+      "url": "https://pear.no/assets/index-Bd_JnIbr.css",
+      "bytes": 61948,
+      "sha256": "9fac3d914087991498e0455e14f95dbefbdbbd96d864e647bb681930e22bda0f"
+    }
+  ],
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  }
+}

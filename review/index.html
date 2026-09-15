@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Pear · 复刻对照与验收</title>
+    <link rel="stylesheet" href="/src/styles/tokens.css" />
+    <link rel="stylesheet" href="/review/review.css" />
+  </head>
+  <body>
+    <main>
+      <header class="masthead">
+        <a class="wordmark" href="/">Pear<span> / 实现研究</span></a>
+        <nav aria-label="文档">
+          <button data-doc="IMPLEMENTATION.md">实现说明</button
+          ><button data-doc="DESIGN-HANDOFF.md">设计师交付要求</button
+          ><button data-doc="VERIFICATION.md">检查记录</button>
+        </nav>
+      </header>
+      <section class="intro">
+        <div>
+          <p class="eyebrow">REFERENCE / RECONSTRUCTION / REVIEW</p>
+          <h1>把原站与实现，<br />放在同一帧。</h1>
+          <p class="lede">
+            先核对画面，再看连续运动，最后亲自操作。<br />页面怎么实现、设计师需要提供什么，都放在这里。
+          </p>
+        </div>
+        <aside>
+          <p class="stage-label">当前确认顺序</p>
+          <ol class="approval">
+            <li class="current"><span>01</span>朱锋验收</li>
+            <li><span>02</span>Owen 确认</li>
+            <li><span>03</span>与 Cici 沟通</li>
+          </ol>
+          <p class="quiet">本地研究与收件验收，尚未对外部署。</p>
+        </aside>
+      </section>
+      <section class="compare-section" aria-labelledby="comparison-title">
+        <div class="section-heading">
+          <h2 id="comparison-title"><span>01</span>固定画面对照</h2>
+          <a
+            id="open-replica"
+            class="primary"
+            href="/?hero=signal"
+            target="_blank"
+            rel="noopener"
+            >打开可操作复刻 ↗</a
+          >
+        </div>
+        <div class="controls">
+          <div class="control-group">
+            <span class="control-label">尺寸</span>
+            <div class="segmented" id="viewport-control">
+              <button data-value="desktop" aria-pressed="true">桌面</button
+              ><button data-value="mobile" aria-pressed="false">手机</button>
+            </div>
+          </div>
+          <label class="control-group"
+            ><span class="control-label">首屏版本</span
+            ><select id="hero">
+              <option value="signal">举梨 · Signal</option>
+              <option value="colossus">巨梨 · Colossus</option>
+              <option value="reveal">揭幕 · Reveal</option>
+            </select></label
+          ><label class="control-group scene-select"
+            ><span class="control-label">场景</span
+            ><select id="scene"></select
+          ></label>
+          <div class="control-group">
+            <span class="control-label">查看方式</span>
+            <div class="segmented" id="mode-control">
+              <button data-value="side" aria-pressed="true">并排</button
+              ><button data-value="overlay" aria-pressed="false">叠加</button
+              ><button data-value="diff" aria-pressed="false">差异</button>
+            </div>
+          </div>
+        </div>
+        <div class="image-pair" id="image-pair">
+          <figure>
+            <figcaption><b>PEAR</b><span>现站基准</span></figcaption>
+            <img
+              id="reference-image"
+              alt="原站固定状态截图"
+              width="1440"
+              height="900"
+            />
+          </figure>
+          <figure>
+            <figcaption><b>LOCAL</b><span>本地复刻</span></figcaption>
+            <img
+              id="local-image"
+              alt="本地同一状态截图"
+              width="1440"
+              height="900"
+            />
+          </figure>
+        </div>
+        <div class="overlay-view" id="overlay-view" hidden>
+          <div class="overlay-images">
+            <img id="overlay-reference" alt="原站叠加底图" /><img
+              id="overlay-local"
+              alt="本地叠加画面"
+            /><img id="difference-image" alt="像素差异标记图" hidden />
+          </div>
+          <label class="opacity-control" id="opacity-control"
+            >本地画面透明度
+            <input
+              id="opacity"
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+            /><output id="opacity-value">50%</output></label
+          >
+        </div>
+        <div class="comparison-caption">
+          <p id="frame-description"></p>
+          <p id="geometry-status"></p>
+        </div>
+        <p class="quiet">
+          取帧固定同一场景与时刻；手机使用独立的滚动映射。差异图中的红色也可能来自纹理、压缩或抗锯齿，需结合原图判断。
+        </p>
+      </section>
+      <section class="motion-section" aria-labelledby="motion-title">
+        <div class="section-heading">
+          <h2 id="motion-title"><span>02</span>再看它怎么动</h2>
+          <div class="play-controls">
+            <button id="play-both">一起播放</button
+            ><button id="pause-both">暂停</button
+            ><button id="restart-both">回到开头</button
+            ><label
+              >速度
+              <select id="speed">
+                <option value="1">正常</option>
+                <option value="0.5">0.5 倍</option>
+                <option value="0.25">0.25 倍</option>
+              </select></label
+            >
+          </div>
+        </div>
+        <div class="video-pair">
+          <figure>
+            <figcaption><b>PEAR</b><span>原站浏览器录像</span></figcaption>
+            <video
+              id="reference-video"
+              controls
+              muted
+              playsinline
+              preload="none"
+            ></video>
+          </figure>
+          <figure>
+            <figcaption><b>LOCAL</b><span>复刻浏览器录像</span></figcaption>
+            <video
+              id="local-video"
+              controls
+              muted
+              playsinline
+              preload="none"
+            ></video>
+          </figure>
+        </div>
+        <p id="motion-description" class="quiet"></p>
+      </section>
+      <section class="try-section" aria-labelledby="try-title">
+        <div class="section-heading">
+          <h2 id="try-title"><span>03</span>亲自滚动、点击、填写</h2>
+          <a
+            id="original-link"
+            href="https://pear.no/?hero=signal"
+            target="_blank"
+            rel="noopener"
+            >原站同一首屏 ↗</a
+          >
+        </div>
+        <div class="try-layout">
+          <ol>
+            <li>打开复刻，从头慢滚一遍，再快滚和向回滚。</li>
+            <li>用左侧章节菜单跳转，检查场景是否跟上。</li>
+            <li>点击申请按钮，试填表单；内容只保存到本地。</li>
+            <li>用 Tab 键操作，或打开静态阅读模式。</li>
+          </ol>
+          <div class="try-links">
+            <a class="primary" href="/?reader=1" target="_blank" rel="noopener"
+              >查看静态阅读 ↗</a
+            ><button id="show-live">在这里打开复刻</button
+            ><button data-doc="ACCEPTANCE.md">完整验收约定</button>
+          </div>
+        </div>
+        <div id="live-wrap" hidden>
+          <iframe
+            id="live-frame"
+            title="可操作的 Pear 复刻"
+            loading="lazy"
+          ></iframe
+          ><button id="seek-live">跳到上面选中的场景</button>
+        </div>
+      </section>
+      <section class="implementation-section">
+        <div class="section-heading">
+          <h2><span>04</span>代码与源画面，各负责什么</h2>
+          <button data-doc="IMPLEMENTATION.md">读完整实现说明 ↗</button>
+        </div>
+        <div class="responsibilities">
+          <div>
+            <p class="eyebrow">由代码生成与控制</p>
+            <h3>布局、文字、转场、纸感、<br />轨道和真实交互。</h3>
+            <p>
+              环形揭示、撕裂、字符化、纸张纹理、移动光影、图文推进、签名描边、问答排列、表单悬浮，都有可调整的程序实现。
+            </p>
+          </div>
+          <div>
+            <p class="eyebrow">源画面提供的信息</p>
+            <h3>绘画细节、人物动作、<br />遮挡与连续变形。</h3>
+            <p>
+              原片里已经画入的内容单独归为资源，不计入程序生成。保留原因、逐帧证据与文件来源写进实现说明。
+            </p>
+          </div>
+        </div>
+        <details class="materials" id="material-examples">
+          <summary>看两个具体例子：输入什么，网页再做什么</summary>
+          <div class="material-pair">
+            <figure>
+              <figcaption>输入：原始工程绘画长图</figcaption>
+              <a href="/art/scaffold_expand.jpg" target="_blank" rel="noopener"
+                ><img
+                  src="/art/scaffold_expand.jpg"
+                  width="1328"
+                  height="3515"
+                  loading="lazy"
+                  alt="用于工程章节的原始长图，点击查看完整文件"
+              /></a>
+            </figure>
+            <figure>
+              <figcaption>网页：平移、配字、标尺与章节推进</figcaption>
+              <img
+                src="/evidence/results/desktop-signal-work-mid-local.png"
+                width="1440"
+                height="900"
+                loading="lazy"
+                alt="长图经过网页代码控制后的工程章节画面"
+              />
+            </figure>
+          </div>
+          <p class="quiet">
+            设计师提供画面母版、文字落点和起止示意；开发实现运动与布局。
+          </p>
+          <div class="material-pair">
+            <figure>
+              <figcaption>无需图片：同一个程序直接生成纸感与光影</figcaption>
+              <canvas
+                id="paper-demo"
+                width="640"
+                height="400"
+                role="img"
+                aria-label="由网页相同算法直接生成的纸张质感和移动光影"
+              ></canvas>
+            </figure>
+            <figure>
+              <figcaption>网页：程序纸张、绘画与文字组合</figcaption>
+              <img
+                src="/evidence/results/desktop-signal-terms-one-local.png"
+                width="1440"
+                height="900"
+                loading="lazy"
+                alt="程序生成纸张质感的合作条款章节"
+              />
+            </figure>
+          </div>
+          <p id="paper-demo-note" class="quiet">
+            左边没有加载纸张图片或视频，和复刻页面共用纸张算法及参数。设计师需要说明质感、光影和变化节奏。
+          </p>
+        </details>
+        <details class="materials">
+          <summary>查看原始连续画面的抽帧证据</summary>
+          <img
+            src="/evidence/reference/media-motion-audit.jpg"
+            alt="九组源画面的起点、中间状态和终点"
+            width="1500"
+            height="1710"
+            loading="lazy"
+          />
+        </details>
+      </section>
+      <section class="evidence-section">
+        <div class="section-heading">
+          <h2><span>05</span>检查记录</h2>
+          <button data-doc="VERIFICATION.md">查看范围、失败与未验证项 ↗</button>
+        </div>
+        <div id="checks" class="checks"></div>
+        <p class="quiet">
+          自动检查与人工画面判断分别记录。浏览器模拟不等于真实手机；线上部署、外部投递和你本人的验收不会被标成已经通过。
+        </p>
+      </section>
+      <footer>
+        <p>PEAR RECONSTRUCTION STUDY</p>
+        <p id="capture-date"></p>
+        <p>确认后再交给 Owen，随后与 Cici 沟通。</p>
+      </footer>
+    </main>
+    <dialog id="document-dialog" aria-label="实现与设计交付文档">
+      <div class="document-toolbar">
+        <a id="download-document" download>下载 Markdown</a
+        ><button id="close-document" aria-label="关闭文档">关闭 ×</button>
+      </div>
+      <article id="document-body"></article>
+    </dialog>
+    <script type="module" src="/review/review.js"></script>
+  </body>
+</html>

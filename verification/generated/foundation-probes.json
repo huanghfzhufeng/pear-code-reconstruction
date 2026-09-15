@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-09-15T13:41:52.897Z",
+  "results": [
+    {
+      "rule": "V1",
+      "status": "pass",
+      "colors": {
+        "before": {
+          "button": "rgb(11, 10, 9)",
+          "error": "rgb(167, 47, 35)"
+        },
+        "after": {
+          "button": "rgb(102, 51, 153)",
+          "error": "rgb(167, 47, 35)"
+        }
+      }
+    },
+    {
+      "rule": "S4",
+      "status": "pass",
+      "gaps": {
+        "before": 24,
+        "after": 24
+      }
+    },
+    {
+      "rule": "P2",
+      "status": "pass",
+      "first": {
+        "status": 404,
+        "cache": "no-store"
+      },
+      "second": {
+        "status": 200,
+        "text": "available after initial miss"
+      }
+    },
+    {
+      "rule": "P4",
+      "status": "pass",
+      "before": 725.3125,
+      "after": 725.3125
+    }
+  ]
+}

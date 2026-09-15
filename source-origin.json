@@ -1,0 +1,6 @@
+{
+  "branch": "codex/pear-code-reconstruction-20260915",
+  "baseCommit": "ae567dcefcd03435aefed52ec37d114c69206f4f",
+  "reference": "https://pear.no/",
+  "scope": "Internal reconstruction; working-tree changes are bound by build-manifest source hashes."
+}

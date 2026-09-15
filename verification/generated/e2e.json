@@ -1,0 +1,180 @@
+{
+  "run": "2026-09-15T13-20-51-415Z",
+  "base": "http://127.0.0.1:4193",
+  "results": [
+    {
+      "name": "desktop / initial scene, no runtime errors",
+      "status": "pass",
+      "milliseconds": 3036,
+      "detail": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "height": 48150
+      }
+    },
+    {
+      "name": "first screen / bounded source-frame requests, no external requests",
+      "status": "pass",
+      "milliseconds": 0,
+      "detail": {
+        "frameRequests": 15,
+        "resourceCount": 33
+      }
+    },
+    {
+      "name": "keyboard / visible focus and menu focus containment",
+      "status": "pass",
+      "milliseconds": 160
+    },
+    {
+      "name": "navigation / all four chapter links land and close menu",
+      "status": "pass",
+      "milliseconds": 3223,
+      "detail": {
+        "chapters": 4
+      }
+    },
+    {
+      "name": "application / native validation, local receipt and persistent write",
+      "status": "pass",
+      "milliseconds": 3228,
+      "detail": {
+        "receipt": "7c82ef87-bb61-415a-9f34-0817fcecf1d4",
+        "localInbox": true
+      }
+    },
+    {
+      "name": "application / failed network preserves fields and retries",
+      "status": "pass",
+      "milliseconds": 5839
+    },
+    {
+      "name": "API / concurrent duplicate requests store once; conflict rejected",
+      "status": "pass",
+      "milliseconds": 17
+    },
+    {
+      "name": "reduced motion / full content, zero video requests, static FAQ and local form",
+      "status": "pass",
+      "milliseconds": 747,
+      "detail": {
+        "videoRequests": 0
+      }
+    },
+    {
+      "name": "no JavaScript / readable chapters and native FAQ",
+      "status": "pass",
+      "milliseconds": 398
+    },
+    {
+      "name": "dynamic reduced motion / renderer stops and media pause",
+      "status": "pass",
+      "milliseconds": 31
+    },
+    {
+      "name": "media error / complete readable recovery, no false success",
+      "status": "pass",
+      "milliseconds": 335
+    },
+    {
+      "name": "WebGL unavailable / complete readable recovery",
+      "status": "pass",
+      "milliseconds": 251
+    },
+    {
+      "name": "slow network / content remains available while film is delayed",
+      "status": "pass",
+      "milliseconds": 8261
+    },
+    {
+      "name": "responsive / 320×844",
+      "status": "pass",
+      "milliseconds": 3108,
+      "detail": {
+        "input": {
+          "x": 194.7606964111328,
+          "y": 84.25664520263672,
+          "width": 95.51213073730469,
+          "height": 19.103302001953125
+        }
+      }
+    },
+    {
+      "name": "responsive / 390×844",
+      "status": "pass",
+      "milliseconds": 3163,
+      "detail": {
+        "input": {
+          "x": 237.2325439453125,
+          "y": 87.36688232421875,
+          "width": 116.5164794921875,
+          "height": 22.333839416503906
+        }
+      }
+    },
+    {
+      "name": "responsive / 768×1024",
+      "status": "pass",
+      "milliseconds": 3212,
+      "detail": {
+        "input": {
+          "x": 539.3591918945312,
+          "y": 262.6903381347656,
+          "width": 99.5445556640625,
+          "height": 18.644134521484375
+        }
+      }
+    },
+    {
+      "name": "responsive / 1280×720",
+      "status": "pass",
+      "milliseconds": 3209,
+      "detail": {
+        "input": {
+          "x": 832.5400390625,
+          "y": 82.63098907470703,
+          "width": 122.85296630859375,
+          "height": 22.76696014404297
+        }
+      }
+    },
+    {
+      "name": "accessibility / reader WCAG A and AA",
+      "status": "pass",
+      "milliseconds": 450
+    },
+    {
+      "name": "URLs / canonical, noindex, review redirect and real missing response",
+      "status": "pass",
+      "milliseconds": 22
+    },
+    {
+      "name": "late image / requested frame replaces earlier frame without further scroll",
+      "status": "pass",
+      "milliseconds": 4005
+    },
+    {
+      "name": "wheel / forward, reverse and leaving-scene video pause",
+      "status": "pass",
+      "milliseconds": 4330
+    },
+    {
+      "name": "early CTA / navigation intent survives delayed hero loading",
+      "status": "pass",
+      "milliseconds": 401
+    },
+    {
+      "name": "WebKit / desktop and mobile cinematic rendering",
+      "status": "pass",
+      "milliseconds": 8919
+    }
+  ],
+  "passed": 23,
+  "failed": 0,
+  "limitations": [
+    "Browser emulation is not a physical iPhone Safari test.",
+    "No external form delivery or production deployment is tested."
+  ]
+}

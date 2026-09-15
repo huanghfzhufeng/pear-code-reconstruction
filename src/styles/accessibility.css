@@ -1,0 +1,213 @@
+#cinematic {
+  display: none;
+}
+.is-enhanced #cinematic {
+  display: block;
+}
+.is-enhanced .reader {
+  display: none;
+}
+.reader {
+  background: var(--reader-bg);
+  color: var(--reader-ink);
+  font: var(--type-body)/1.65 var(--text);
+  min-height: 100vh;
+}
+.reader-hero {
+  position: relative;
+  min-height: 78vh;
+  display: grid;
+  align-items: center;
+  isolation: isolate;
+  color: var(--on-dark);
+  background: var(--press);
+}
+.reader-hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.58);
+}
+.reader-hero > div {
+  max-width: 760px;
+  padding: var(--space-16) var(--space-8);
+}
+.reader h1 {
+  font: 300 var(--type-reader-hero)/1.05 var(--title);
+  text-wrap: balance;
+}
+.reader h2 {
+  font: 400 var(--type-heading)/1.2 var(--title);
+  text-wrap: balance;
+}
+.reader h3 {
+  font: 400 var(--type-lead)/1.3 var(--title);
+}
+.reader section,
+.reader footer {
+  max-width: 850px;
+  padding: var(--space-16) var(--space-8);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+.reader section + section {
+  border-top: 1px solid var(--ink-2a);
+}
+.reader p {
+  max-width: 70ch;
+}
+.reader-eyebrow,
+.reader-nav {
+  font: var(--type-label)/1.5 var(--code);
+}
+.reader-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.reader-lead {
+  font-size: var(--type-lead);
+}
+.reader-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  justify-content: center;
+  padding: var(--space-6);
+  border-bottom: 1px solid var(--ink-2a);
+}
+.reader details {
+  border-bottom: 1px solid var(--ink-2a);
+  padding-bottom: var(--space-6);
+}
+.reader summary {
+  cursor: pointer;
+  font: var(--type-lead)/1.3 var(--title);
+}
+.reader details p {
+  margin-top: var(--space-4);
+}
+.reader-form,
+.reader-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.reader-form {
+  gap: var(--space-6);
+}
+.reader-field input,
+.reader-field textarea {
+  padding: var(--space-4);
+  border: 1px solid var(--ink-2a);
+  border-radius: var(--space-1);
+  width: 100%;
+  background: var(--on-dark);
+}
+.reader-submit {
+  display: inline-flex;
+  align-self: flex-start;
+  background: var(--press);
+  color: var(--on-dark);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--space-1);
+  font: var(--type-label)/1.5 var(--code);
+  margin-top: var(--space-6);
+}
+.reader-submit:disabled {
+  opacity: 0.65;
+  cursor: default;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+:where(a, button, input, textarea, summary):focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 5px;
+}
+.reader :where(a, button, input, textarea, summary):focus-visible {
+  outline-color: var(--ink);
+}
+.mode-link {
+  position: fixed;
+  top: var(--space-3);
+  left: var(--space-3);
+  transform: translateY(-180%);
+  z-index: 2000;
+  background: var(--paper);
+  color: var(--ink);
+  padding: var(--space-3) var(--space-4);
+  font: var(--type-label)/1.3 var(--text);
+}
+.mode-link:focus-visible {
+  transform: none;
+}
+.form-status {
+  font: var(--type-label)/1.5 var(--text);
+}
+.cf-in .form-status {
+  position: absolute;
+  left: 452px;
+  top: 542px;
+  width: 496px;
+  color: var(--on-dark);
+}
+.reader .form-status[data-state="error"] {
+  color: var(--status-error);
+}
+.reader .form-status[data-state="success"] {
+  color: var(--status-success);
+}
+.cf-cta:disabled {
+  cursor: default;
+}
+#experience-notice {
+  position: fixed;
+  bottom: var(--space-4);
+  left: var(--space-4);
+  max-width: calc(100vw - var(--space-8));
+  z-index: 1900;
+  background: var(--paper);
+  color: var(--ink);
+  padding: var(--space-3) var(--space-4);
+  font: var(--type-label)/1.4 var(--text);
+}
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 480px) {
+  .reader section,
+  .reader footer {
+    padding: var(--space-12) var(--space-6);
+  }
+  .reader-hero > div {
+    padding: var(--space-12) var(--space-6);
+  }
+  .reader-hero img {
+    object-position: 72% center;
+  }
+  .reader h2 {
+    font-size: var(--type-heading-small);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

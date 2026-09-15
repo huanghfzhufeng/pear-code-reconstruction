@@ -1,0 +1,98 @@
+[
+  {
+    "file": "motion-desktop-signal-reference.mp4",
+    "width": 1440,
+    "height": 900,
+    "r_frame_rate": "25/1",
+    "duration": "80.600000",
+    "nb_read_frames": "2015"
+  },
+  {
+    "file": "motion-desktop-signal-local.mp4",
+    "width": 1440,
+    "height": 900,
+    "r_frame_rate": "25/1",
+    "duration": "80.600000",
+    "nb_read_frames": "2015"
+  },
+  {
+    "file": "motion-desktop-colossus-reference.mp4",
+    "width": 1440,
+    "height": 900,
+    "r_frame_rate": "25/1",
+    "duration": "20.600000",
+    "nb_read_frames": "515"
+  },
+  {
+    "file": "motion-desktop-colossus-local.mp4",
+    "width": 1440,
+    "height": 900,
+    "r_frame_rate": "25/1",
+    "duration": "20.600000",
+    "nb_read_frames": "515"
+  },
+  {
+    "file": "motion-desktop-reveal-reference.mp4",
+    "width": 1440,
+    "height": 900,
+    "r_frame_rate": "25/1",
+    "duration": "20.600000",
+    "nb_read_frames": "515"
+  },
+  {
+    "file": "motion-desktop-reveal-local.mp4",
+    "width": 1440,
+    "height": 900,
+    "r_frame_rate": "25/1",
+    "duration": "20.600000",
+    "nb_read_frames": "515"
+  },
+  {
+    "file": "motion-mobile-signal-reference.mp4",
+    "width": 390,
+    "height": 844,
+    "r_frame_rate": "25/1",
+    "duration": "80.600000",
+    "nb_read_frames": "2015"
+  },
+  {
+    "file": "motion-mobile-signal-local.mp4",
+    "width": 390,
+    "height": 844,
+    "r_frame_rate": "25/1",
+    "duration": "80.600000",
+    "nb_read_frames": "2015"
+  },
+  {
+    "file": "motion-mobile-colossus-reference.mp4",
+    "width": 390,
+    "height": 844,
+    "r_frame_rate": "25/1",
+    "duration": "20.600000",
+    "nb_read_frames": "515"
+  },
+  {
+    "file": "motion-mobile-colossus-local.mp4",
+    "width": 390,
+    "height": 844,
+    "r_frame_rate": "25/1",
+    "duration": "20.600000",
+    "nb_read_frames": "515"
+  },
+  {
+    "file": "motion-mobile-reveal-reference.mp4",
+    "width": 390,
+    "height": 844,
+    "r_frame_rate": "25/1",
+    "duration": "20.600000",
+    "nb_read_frames": "515"
+  },
+  {
+    "file": "motion-mobile-reveal-local.mp4",
+    "width": 390,
+    "height": 844,
+    "r_frame_rate": "25/1",
+    "duration": "20.600000",
+    "nb_read_frames": "515"
+  }
+]

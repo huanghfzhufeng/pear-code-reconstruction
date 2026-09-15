@@ -1,0 +1,8 @@
+{
+  "errors": [],
+  "changed": true,
+  "sampledColors": 2385,
+  "imageOrVideoInputs": false,
+  "sharedShader": "src/shaders/stage.js",
+  "sharedParameters": "src/data/paper.js"
+}

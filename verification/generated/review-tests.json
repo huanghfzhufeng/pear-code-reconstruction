@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-09-15T13:39:49.685Z",
+  "base": "http://127.0.0.1:4187",
+  "results": [
+    "23 primary checkpoints available",
+    "Mobile / overlay / difference controls",
+    "Both delivered documents open and close",
+    "Paired video playback, pause and seek",
+    "Media range requests",
+    "Review accessibility audit",
+    "Mobile layout and no script errors"
+  ],
+  "passed": 7,
+  "failed": 0
+}

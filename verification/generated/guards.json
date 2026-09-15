@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-09-15T13:46:31.969Z",
+  "results": [
+    {
+      "name": "A1/D1/D2 / initial HTML content, native form, one FAQ source",
+      "status": "pass"
+    },
+    {
+      "name": "S1/S2 / semantic palette and defined style variables",
+      "status": "pass",
+      "detail": {
+        "variables": 177
+      }
+    },
+    {
+      "name": "Code boundary / no captured application runtime or React shipped",
+      "status": "pass",
+      "detail": {
+        "browserBundles": [
+          "engine-Dy6nb6D5.js",
+          "form-Dje_jqGf.js",
+          "main-YsiJDmzd.js",
+          "paper-demo-C4AnKZG1.js",
+          "preload-helper-Al6OFgfo.js",
+          "review-DyBikfVW.js",
+          "stage-B0ImtBSJ.js"
+        ]
+      }
+    },
+    {
+      "name": "P1/P3 / source media identity and explicit derived-video budget",
+      "status": "pass",
+      "detail": {
+        "verifiedPictureFiles": 2603,
+        "pictureBytes": 148995814,
+        "videos": 8
+      }
+    },
+    {
+      "name": "B2 / artifact hashes match current source and recorded build",
+      "status": "pass",
+      "detail": {
+        "sourceDigest": "2a6a3c203ebc547f749f216fcc4c2bea0edc392665cc3f2f6085807b54d4f6f7",
+        "artifactCount": 2652
+      }
+    },
+    {
+      "name": "B3 / guards fail when their protected inputs are damaged",
+      "status": "pass",
+      "detail": {
+        "negativeCases": 4,
+        "restoredArtifactPass": true
+      }
+    },
+    {
+      "name": "D1 / one CTA edit updates animated faces and readable content",
+      "status": "pass"
+    }
+  ],
+  "passed": 7,
+  "failed": 0
+}

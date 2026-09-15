@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-09-15T11:39:28.935Z",
+  "records": [
+    {
+      "file": "films/signal.mp4",
+      "sourceUrl": "https://pear.no/films/signal.mp4",
+      "sourceSha256": "7347122c1596fbb22a3dcd91abac8c62fb9c7fa3672feb220c3496903fbe31b2",
+      "sha256": "7347122c1596fbb22a3dcd91abac8c62fb9c7fa3672feb220c3496903fbe31b2",
+      "sourceBytes": 11289195,
+      "bytes": 11289195,
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "10.000000",
+      "nb_read_frames": "600",
+      "ssim": 1,
+      "settings": {
+        "strategy": "original is smaller and preserves every source pixel",
+        "codec": "source unchanged",
+        "framerate": "preserved",
+        "aspect": "preserved"
+      }
+    },
+    {
+      "file": "films/mobile/signal.mp4",
+      "sourceUrl": "https://pear.no/films/signal.mp4",
+      "sourceSha256": "7347122c1596fbb22a3dcd91abac8c62fb9c7fa3672feb220c3496903fbe31b2",
+      "sha256": "eca7803452f16d579e9a58c80ebc9047f1b8306d5ed30d6381ab8b39277ae69e",
+      "sourceBytes": 11289195,
+      "bytes": 5055149,
+      "width": 1440,
+      "height": 810,
+      "r_frame_rate": "60/1",
+      "duration": "10.000000",
+      "nb_read_frames": "600",
+      "ssim": 0.98758,
+      "settings": {
+        "codec": "libx264",
+        "preset": "medium",
+        "crf": 22,
+        "framerate": "preserved",
+        "aspect": "preserved"
+      }
+    },
+    {
+      "file": "films/colossus.mp4",
+      "sourceUrl": "https://pear.no/films/colossus.mp4",
+      "sourceSha256": "22553f49578ccf00c30c0a39cba2d7e6dc36019abaae35f1954cecdf736fa952",
+      "sha256": "22553f49578ccf00c30c0a39cba2d7e6dc36019abaae35f1954cecdf736fa952",
+      "sourceBytes": 5603291,
+      "bytes": 5603291,
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "10.000000",
+      "nb_read_frames": "600",
+      "ssim": 1,
+      "settings": {
+        "strategy": "original is smaller and preserves every source pixel",
+        "codec": "source unchanged",
+        "framerate": "preserved",
+        "aspect": "preserved"
+      }
+    },
+    {
+      "file": "films/mobile/colossus.mp4",
+      "sourceUrl": "https://pear.no/films/colossus.mp4",
+      "sourceSha256": "22553f49578ccf00c30c0a39cba2d7e6dc36019abaae35f1954cecdf736fa952",
+      "sha256": "ab244541b825ecd624781f79c25fb3efa6a8affc957d1ae81fcecf91560fa4d7",
+      "sourceBytes": 5603291,
+      "bytes": 2465189,
+      "width": 1440,
+      "height": 810,
+      "r_frame_rate": "60/1",
+      "duration": "10.000000",
+      "nb_read_frames": "600",
+      "ssim": 0.991548,
+      "settings": {
+        "codec": "libx264",
+        "preset": "medium",
+        "crf": 22,
+        "framerate": "preserved",
+        "aspect": "preserved"
+      }
+    },
+    {
+      "file": "films/reveal.mp4",
+      "sourceUrl": "https://pear.no/films/reveal.mp4",
+      "sourceSha256": "fca1a28e5e58a3684abc101ef0517a486d2b68e1b6496f6cb9764daeeb6163dd",
+      "sha256": "fca1a28e5e58a3684abc101ef0517a486d2b68e1b6496f6cb9764daeeb6163dd",
+      "sourceBytes": 13714356,
+      "bytes": 13714356,
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "10.000000",
+      "nb_read_frames": "600",
+      "ssim": 1,
+      "settings": {
+        "strategy": "original is smaller and preserves every source pixel",
+        "codec": "source unchanged",
+        "framerate": "preserved",
+        "aspect": "preserved"
+      }
+    },
+    {
+      "file": "films/mobile/reveal.mp4",
+      "sourceUrl": "https://pear.no/films/reveal.mp4",
+      "sourceSha256": "fca1a28e5e58a3684abc101ef0517a486d2b68e1b6496f6cb9764daeeb6163dd",
+      "sha256": "f7acb3998ad32bf4fdc310eff970cb55edc870fe934b43190fef7b9858437fc1",
+      "sourceBytes": 13714356,
+      "bytes": 9244714,
+      "width": 1440,
+      "height": 810,
+      "r_frame_rate": "60/1",
+      "duration": "10.000000",
+      "nb_read_frames": "600",
+      "ssim": 0.988345,
+      "settings": {
+        "codec": "libx264",
+        "preset": "medium",
+        "crf": 22,
+        "framerate": "preserved",
+        "aspect": "preserved"
+      }
+    },
+    {
+      "file": "films/footer-loop.mp4",
+      "sourceUrl": "https://pear.no/films/footer-loop.mp4",
+      "sourceSha256": "35c826daac6298a400bf531fe57d09020f86b1333b04b86260a3b8d1109775cb",
+      "sha256": "35c826daac6298a400bf531fe57d09020f86b1333b04b86260a3b8d1109775cb",
+      "sourceBytes": 7557188,
+      "bytes": 7557188,
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "10.000000",
+      "nb_read_frames": "600",
+      "ssim": 1,
+      "settings": {
+        "strategy": "original is smaller and preserves every source pixel",
+        "codec": "source unchanged",
+        "framerate": "preserved",
+        "aspect": "preserved"
+      }
+    },
+    {
+      "file": "films/mobile/footer-loop.mp4",
+      "sourceUrl": "https://pear.no/films/footer-loop.mp4",
+      "sourceSha256": "35c826daac6298a400bf531fe57d09020f86b1333b04b86260a3b8d1109775cb",
+      "sha256": "16550dfd27051a8808160393e1505422074b1e587110a87a8534be8efc08f2f0",
+      "sourceBytes": 7557188,
+      "bytes": 3454635,
+      "width": 1440,
+      "height": 810,
+      "r_frame_rate": "60/1",
+      "duration": "10.000000",
+      "nb_read_frames": "600",
+      "ssim": 0.985906,
+      "settings": {
+        "codec": "libx264",
+        "preset": "medium",
+        "crf": 22,
+        "framerate": "preserved",
+        "aspect": "preserved"
+      }
+    }
+  ]
+}

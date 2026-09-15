@@ -1,0 +1,11 @@
+{
+  "zip": "delivery/pear-reconstruction-20260915.zip",
+  "status": "pass",
+  "checks": [
+    "zip crc",
+    "private data excluded",
+    "npm ci",
+    "build without git checkout",
+    "source and artifact guards"
+  ]
+}
